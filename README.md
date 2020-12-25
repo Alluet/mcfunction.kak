@@ -1,6 +1,7 @@
 # mcfunction.kak
 
-Minecraft function file highlighting for Kakoune.
+This repository provides syntax highlighting for Minecraft function files.
+The highlighting is inspired by the appearance of [language-mcfunction](https://github.com/Arcensoth/language-mcfunction), but is in fact a clean room implementation as the XML/YAML is unreadable and does not translate to Kakoune's way of highlighting at all!
 
 ## License
 

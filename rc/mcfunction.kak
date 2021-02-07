@@ -25,8 +25,8 @@ hook -group mcfunction-highlight global WinSetOption filetype=mcfunction %{
 provide-module mcfunction %❤
     add-highlighter shared/mcfunction       group
     add-highlighter shared/mcfunction/main  regions
-    add-highlighter shared/mcfunction/main/ region '^[\t ]*\K#' '$' fill comment
-    add-highlighter shared/mcfunction/main/ region '^[\t ]*\K(?!#)' '$' ref mcfunction/root
+    add-highlighter shared/mcfunction/main/ region '^[\t ]*\K(?=#).+$' '$' fill comment
+    add-highlighter shared/mcfunction/main/ region '^[\t ]*\K(?!#).+$' '$' ref mcfunction/root
 
     add-highlighter shared/mcfunction/root  regions
     add-highlighter shared/mcfunction/root/ region '^[\t ]*\K(?!say[\t ])[^\t\n #]' '$|(?=[\t ])' regex '(?:[a-z0-9_.-]*:)?[a-z0-9_./-]*([^\t\n a-z0-9_.-][^\t\n ]*)?' 0:keyword 1:error
